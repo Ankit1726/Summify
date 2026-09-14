@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-<a href="YOUR_RENDER_URL">
+<a href="https://summify-35ok.onrender.com">
 <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-success?style=for-the-badge">
 </a>
 </p>
@@ -48,7 +48,7 @@
 
 ---
 
-###  ***Live Demo 🌐: [Summify]('')***
+###  ***Live Demo 🌐: [Summify]('https://summify-35ok.onrender.com')***
 
 
 ---
