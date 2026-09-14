@@ -289,7 +289,7 @@ If you find **Summify** useful:
 
 ### ***AI Engineer • AI Backend Developer • GenAI & Agentic AI Developer***
 
-Building intelligent AI systems using:
+***Building intelligent AI systems using***
 
 ***Machine Learning • Deep Learning • NLP • Generative AI • Agentic AI***
 
