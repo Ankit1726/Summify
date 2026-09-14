@@ -287,11 +287,11 @@ If you find **Summify** useful:
 
 ## ***ANKIT GUPTA 👦***
 
-### AI Engineer • AI Backend Developer • GenAI & Agentic AI Developer
+### ***AI Engineer • AI Backend Developer • GenAI & Agentic AI Developer***
 
 Building intelligent AI systems using:
 
-**Machine Learning • Deep Learning • NLP • Generative AI • Agentic AI**
+***Machine Learning • Deep Learning • NLP • Generative AI • Agentic AI***
 
 </div>
 
@@ -303,8 +303,8 @@ Building intelligent AI systems using:
 
 ### ***Read Less. Understand More.***
 
-**AI-Powered Text Summarization using Fine-Tuned T5**
+***AI-Powered Text Summarization using Fine-Tuned T5***
 
-Made with ❤️ by **Ankit Gupta**
+***Made with ❤️ by Ankit Gupta***
 
 </div>
