@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🟢 Summify
+# ***🟢 Summify***
 
-### 🤖 AI-Powered Text Summarization using Fine-Tuned T5
+### ***🤖 AI-Powered Text Summarization using Fine-Tuned T5***
 
-**Summarize • Understand • Simplify**
+***Summarize • Understand • Simplify***
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&color=4DA6FF&center=true&vCenter=true&width=900&lines=AI+Powered+Text+Summarizer;Fine-Tuned+T5+Transformer;FastAPI+Backend;Modern+Dark+UI;Docker+%2B+Render+Deployment;Built+by+Ankit+Gupta"/>
@@ -30,13 +30,13 @@
 
 ---
 
-## 🌟 About
+### ***🌟 About***
 
 **Summify** is an AI-powered text summarization application built with a **fine-tuned T5 Transformer model**.
 
 It converts long-form text into concise, meaningful summaries through a simple web interface. The project demonstrates an end-to-end NLP workflow from model training and inference to FastAPI, Docker, and cloud deployment.
 
-### ✨ What Summify Offers
+### ***✨ What Summify Offers***
 
 - 📝 Long-text summarization
 - 🤖 Fine-tuned T5 Transformer model
@@ -50,29 +50,18 @@ It converts long-form text into concise, meaningful summaries through a simple w
 
 ---
 
-## 🚀 Live Demo
+###  ***Live Demo 🌐: [Summify]('')***
 
-🌐 **Application:** `YOUR_RENDER_URL`
-
-> Replace `YOUR_RENDER_URL` with your actual deployed Render URL.
 
 ---
 
-## 📸 Preview
-
-Add your screenshot here:
-
-```text
-preview/ui.png
-```
-
-```html
+### ***📸 Preview***
 <img src="./preview/ui.png" width="100%">
 ```
 
 ---
 
-## 🧠 How It Works
+### ***🧠 How It Works***
 
 ```text
                         USER
@@ -119,62 +108,6 @@ preview/ui.png
 
 ---
 
-# 🔄 Model Workflow
-
-```text
-Long Text
-    │
-    ▼
-Preprocessing
-    │
-    ▼
-Tokenization
-    │
-    ▼
-Input IDs
-    │
-    ▼
-Fine-Tuned T5
-    │
-    ▼
-Sequence Generation
-    │
-    ▼
-Output Tokens
-    │
-    ▼
-Detokenization
-    │
-    ▼
-Final Summary
-```
-
----
-
-# 🤖 T5 Transformer
-
-Summify uses a **fine-tuned T5 sequence-to-sequence Transformer**.
-
-T5 approaches NLP problems as **text-to-text** tasks.
-
-```text
-Input
-  │
-  ▼
-"summarize: <long text>"
-  │
-  ▼
-T5 Encoder
-  │
-  ▼
-T5 Decoder
-  │
-  ▼
-Generated Tokens
-  │
-  ▼
-Short Summary
-```
 
 ### T5 can be used for
 
@@ -231,345 +164,8 @@ Short Summary
 | Development | Jupyter Notebook |
 | Version Control | Git & GitHub |
 
----
 
-# 📂 Project Structure
-
-```text
-Summify/
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── backend/
-│   └── main.py
-│
-├── model/
-│   └── saved_summary_model/
-│       ├── config.json
-│       ├── tokenizer_config.json
-│       ├── tokenizer files
-│       └── model weights
-│
-├── src/
-│   ├── data/
-│   └── notebook/
-│       └── Model_T5.ipynb
-│
-├── preview/
-│   └── ui.png
-│
-├── Dockerfile
-├── .dockerignore
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
----
-
-# ⚙️ Local Setup
-
-## 1. Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Summify.git
-cd Summify
-```
-
----
-
-## 2. Create Virtual Environment
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-## 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 4. Start Backend
-
-Run from the project root:
-
-```bash
-uvicorn backend.main:app --reload --port 8000
-```
-
-Open:
-
-```text
-http://localhost:8000
-```
-
-The FastAPI backend serves the frontend, so no separate frontend server is required.
-
----
-
-# 🐳 Docker Setup
-
-## Build Image
-
-```bash
-docker build -t summify .
-```
-
-## Run Container
-
-```bash
-docker run -p 8000:8000 summify
-```
-
-Open:
-
-```text
-http://localhost:8000
-```
-
----
-
-# ☁️ Render Deployment
-
-Summify can be deployed as a Docker Web Service on Render.
-
-### Deployment Architecture
-
-```text
-GitHub
-   │
-   ▼
-Render
-   │
-   ▼
-Docker Build
-   │
-   ▼
-Install Dependencies
-   │
-   ▼
-Load T5 Model
-   │
-   ▼
-Start FastAPI
-   │
-   ▼
-Live Application
-```
-
-### Steps
-
-1. Push the project to GitHub.
-2. Create a new Web Service on Render.
-3. Connect the GitHub repository.
-4. Select Docker deployment.
-5. Render detects the `Dockerfile`.
-6. Build and deploy the application.
-7. Open the generated Render URL.
-
-### Port
-
-Render provides the `PORT` environment variable.
-
-Your application should start Uvicorn using the assigned port.
-
-Example:
-
-```bash
-uvicorn backend.main:app --host 0.0.0.0 --port $PORT
-```
-
----
-
-# ⚠️ Model Path
-
-The trained model in this project is stored under:
-
-```text
-model/saved_summary_model/
-```
-
-Make sure the path used in `backend/main.py` matches the location inside the Docker container.
-
-Example:
-
-```python
-MODEL_PATH = "model/saved_summary_model"
-```
-
-And the Dockerfile should copy the model accordingly:
-
-```dockerfile
-COPY model/saved_summary_model /app/model/saved_summary_model
-```
-
-The **Python model path and Docker model path must match**.
-
----
-
-# 🔌 API Documentation
-
-## Health Check
-
-### Endpoint
-
-```http
-GET /health
-```
-
-### Response
-
-```json
-{
-  "status": "ok",
-  "device": "cpu"
-}
-```
-
-This endpoint is useful for checking whether the application is running correctly.
-
----
-
-## Summarization
-
-### Endpoint
-
-```http
-POST /summarize/
-```
-
-### Request
-
-```json
-{
-  "dialogue": "Your long text goes here..."
-}
-```
-
-### Response
-
-```json
-{
-  "summary": "A shorter version of the input text."
-}
-```
-
----
-
-# 🧪 API Example
-
-### Python
-
-```python
-import requests
-
-url = "http://localhost:8000/summarize/"
-
-payload = {
-    "dialogue": """
-    Artificial intelligence is rapidly changing the way organizations
-    analyze data, automate processes, and build intelligent applications.
-    """
-}
-
-response = requests.post(url, json=payload)
-
-print(response.json())
-```
-
----
-
-# 🌐 API Flow
-
-```text
-Frontend
-   │
-   │ POST /summarize/
-   ▼
-FastAPI
-   │
-   ▼
-Validate Input
-   │
-   ▼
-Tokenizer
-   │
-   ▼
-Fine-Tuned T5
-   │
-   ▼
-Generate Summary
-   │
-   ▼
-JSON Response
-   │
-   ▼
-Frontend
-```
-
----
-
-# 📊 End-to-End ML Pipeline
-
-```text
-┌─────────────────────┐
-│      Dataset        │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│ Data Preprocessing  │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│     Tokenization    │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│    T5 Fine-Tuning   │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│      Evaluation     │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│     Save Model      │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│    FastAPI API      │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│       Docker        │
-└──────────┬──────────┘
-           ▼
-┌─────────────────────┐
-│   Render Deployment │
-└─────────────────────┘
-```
-
----
-
-# 🎯 Use Cases
+### ***🎯 Use Cases***
 
 Summify can be used for:
 
@@ -585,7 +181,7 @@ Summify can be used for:
 
 ---
 
-# 💡 Key Learning Outcomes
+### ***💡 Key Learning Outcomes***
 
 This project demonstrates how to take an NLP model from experimentation to a deployable application.
 
@@ -608,95 +204,9 @@ This project demonstrates how to take an NLP model from experimentation to a dep
 - API health checks
 - Project structure
 
-### Complete Pipeline
 
-```text
-Data
- ↓
-Preprocessing
- ↓
-Tokenization
- ↓
-T5 Fine-Tuning
- ↓
-Evaluation
- ↓
-Model Saving
- ↓
-Inference
- ↓
-FastAPI
- ↓
-Docker
- ↓
-Render
- ↓
-Live Application
-```
 
----
-
-# 🏆 Project Highlights
-
-| Feature | Implementation |
-|---|---|
-| NLP Task | Text Summarization |
-| Model | Fine-Tuned T5 |
-| Deep Learning | PyTorch |
-| NLP Framework | Hugging Face Transformers |
-| Backend | FastAPI |
-| Frontend | HTML / CSS / JavaScript |
-| API | REST |
-| Containerization | Docker |
-| Cloud | Render |
-| Training | Jupyter Notebook |
-
----
-
-# 🎯 Project Goal
-
-The goal of Summify is to demonstrate a complete **NLP model-to-production workflow**.
-
-The project combines:
-
-```text
-Machine Learning
-       +
-Deep Learning
-       +
-Natural Language Processing
-       +
-Transformer Models
-       +
-Backend Development
-       +
-Frontend Development
-       +
-Docker
-       +
-Cloud Deployment
-```
-
----
-
-# 🔮 Future Enhancements
-
-- 📄 PDF summarization
-- 📚 Multiple document summarization
-- 🔗 URL summarization
-- 🎙️ Audio-to-text summarization
-- 🌐 Multilingual summarization
-- 🧠 RAG-based summarization
-- 📊 ROUGE / BERTScore evaluation
-- 💾 Summary history
-- 🔐 User authentication
-- ⚡ GPU inference
-- 📱 Improved mobile UI
-- 🤖 T5 + LLM hybrid summarization
-
----
-
-# 🚀 Future Architecture
+### ***🚀 Future Architecture****
 
 ```text
                          User
@@ -727,34 +237,9 @@ Cloud Deployment
                       Summary
 ```
 
----
 
-# 🔐 Environment Variables
 
-For the current version, no API keys are required for the basic summarization workflow.
-
-If additional services are added in the future, configure their credentials through environment variables instead of committing secrets to GitHub.
-
-Example:
-
-```env
-MODEL_PATH=model/saved_summary_model
-PORT=8000
-```
-
-Never commit:
-
-```text
-.env
-API keys
-Passwords
-Access tokens
-Private credentials
-```
-
----
-
-# 📝 Example Input
+### ***📝 Example Input***
 
 ```text
 Artificial intelligence has become an important technology across
@@ -773,34 +258,8 @@ analyze data, improve decisions, and build intelligent applications.
 
 ---
 
-# 🧪 Testing
 
-Start the application:
-
-```bash
-uvicorn backend.main:app --reload --port 8000
-```
-
-Check health:
-
-```bash
-curl http://localhost:8000/health
-```
-
-Test summarization:
-
-```bash
-curl -X POST http://localhost:8000/summarize/ \
--H "Content-Type: application/json" \
--d "{\"dialogue\":\"Your long text here\"}"
-```
-
----
-
-# 📌 Notes
-
-### Model Size
-
+### ***📌 Notes***
 Transformer model files can be large. If the trained model is too large for normal GitHub repository limits, consider:
 
 - Git LFS
@@ -812,40 +271,8 @@ Do not commit large model files blindly if they exceed GitHub's file-size limits
 
 ---
 
-# 🤝 Contributing
 
-Contributions are welcome.
-
-### Steps
-
-```bash
-git fork
-```
-
-Create a feature branch:
-
-```bash
-git checkout -b feature/new-feature
-```
-
-Make your changes and commit:
-
-```bash
-git add .
-git commit -m "Add new feature"
-```
-
-Push the branch:
-
-```bash
-git push origin feature/new-feature
-```
-
-Then create a Pull Request.
-
----
-
-# ⭐ Support
+### ***⭐ Support***
 
 If you find **Summify** useful:
 
@@ -857,11 +284,11 @@ If you find **Summify** useful:
 
 ---
 
-# 👨‍💻 Developer
+### ***👨‍💻 Developer***
 
 <div align="center">
 
-## **ANKIT GUPTA 👦**
+## ***ANKIT GUPTA 👦***
 
 ### AI Engineer • AI Backend Developer • GenAI & Agentic AI Developer
 
@@ -875,9 +302,9 @@ Building intelligent AI systems using:
 
 <div align="center">
 
-# 🟢 Summify
+## ***🟢 Summify***
 
-### **Read Less. Understand More.**
+### ***Read Less. Understand More.***
 
 **AI-Powered Text Summarization using Fine-Tuned T5**
 
