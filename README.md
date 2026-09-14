@@ -146,14 +146,13 @@
 
 ---
 
-# 🛠️ Tech Stack
+### ***🛠️ Tech Stack***
 
 | Category | Technology |
 |---|---|
 | Programming | Python 3.11 |
 | Deep Learning | PyTorch |
 | NLP | Hugging Face Transformers |
-| Model | T5 |
 | Backend | FastAPI |
 | Server | Uvicorn |
 | Frontend | HTML, CSS, JavaScript |
