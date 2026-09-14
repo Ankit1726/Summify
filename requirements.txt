@@ -1,0 +1,13 @@
+ipykernel
+numpy 
+pandas 
+matplotlib
+seaborn 
+
+torch 
+transformers 
+fastapi
+uvicorn[standard]
+sentencepiece
+pydantic
+huggingface_hub
