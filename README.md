@@ -36,6 +36,8 @@
 
 ***It converts long-form text into concise, meaningful summaries through a simple web interface. The project demonstrates an end-to-end NLP workflow from model training and inference to FastAPI, Docker, and cloud deployment.***
 
+---
+
 ### ***✨ What Summify Offers***
 
 - 📝 Long-text summarization
@@ -43,10 +45,6 @@
 - 🧠 Sequence-to-sequence NLP inference
 - ⚡ FastAPI REST API
 - 🎨 Modern dark animated UI
-- 🐳 Docker support
-- ☁️ Render deployment
-- 🔌 Health-check endpoint
-- 📱 Responsive frontend
 
 ---
 
