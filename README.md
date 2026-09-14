@@ -32,9 +32,9 @@
 
 ### ***🌟 About***
 
-**Summify** is an AI-powered text summarization application built with a **fine-tuned T5 Transformer model**.
+***Summify is an AI-powered text summarization application built with a **fine-tuned T5 Transformer model.***
 
-It converts long-form text into concise, meaningful summaries through a simple web interface. The project demonstrates an end-to-end NLP workflow from model training and inference to FastAPI, Docker, and cloud deployment.
+***It converts long-form text into concise, meaningful summaries through a simple web interface. The project demonstrates an end-to-end NLP workflow from model training and inference to FastAPI, Docker, and cloud deployment.***
 
 ### ***✨ What Summify Offers***
 
