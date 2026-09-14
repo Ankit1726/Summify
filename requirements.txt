@@ -10,4 +10,4 @@ fastapi
 uvicorn[standard]
 sentencepiece
 pydantic
-huggingface_hub
+accelerate

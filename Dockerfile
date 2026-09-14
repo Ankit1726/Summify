@@ -1,9 +1,11 @@
 FROM python:3.11-slim
 
+# Python configuration
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
 
+# Application directory
 WORKDIR /app
 
 # System dependencies
@@ -11,25 +13,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Python dependencies
+# Install Python dependencies
 COPY requirements.txt .
-
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Backend
+# Copy backend
 COPY app.py .
 
-# Source code
+# Copy source code
 COPY src ./src
 
-# Frontend
+# Copy frontend
 COPY frontend ./frontend
 
-# Frontend path
+# Frontend directory
 ENV FRONTEND_DIR=/app/frontend
 
-# Render port
+# Render web service port
 EXPOSE 10000
 
-# Start application
+# Start FastAPI
 CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000}"]
