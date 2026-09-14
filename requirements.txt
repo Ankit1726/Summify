@@ -4,10 +4,10 @@ pandas
 matplotlib
 seaborn 
 
-torch 
-transformers 
+--extra-index-url https://download.pytorch.org/whl/cpu
 fastapi
 uvicorn[standard]
-sentencepiece
-pydantic
+torch
+transformers
 accelerate
+sentencepiece
