@@ -17,15 +17,7 @@
 <img src="https://img.shields.io/badge/T5-Transformer-orange?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi"/>
 <img src="https://img.shields.io/badge/Docker-Deployment-2496ED?style=for-the-badge&logo=docker"/>
-<img src="https://img.shields.io/badge/Render-Cloud-46E3B7?style=for-the-badge"/>
 </p>
-
-<p align="center">
-<a href="https://summify-35ok.onrender.com">
-<img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-success?style=for-the-badge">
-</a>
-</p>
-
 </div>
 
 ---
@@ -45,11 +37,6 @@
 - 🧠 Sequence-to-sequence NLP inference
 - ⚡ FastAPI REST API
 - 🎨 Modern dark animated UI
-
----
-
-###  ***Live Demo 🌐: [Summify](https://summify-35ok.onrender.com)***
-
 
 ---
 
